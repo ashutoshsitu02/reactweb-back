@@ -3,7 +3,7 @@ const express = require('express');
 var app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors')
-
+const PORT =3001;
 
 
 var mysqlConnection = mysql.createConnection({
