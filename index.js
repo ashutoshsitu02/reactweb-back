@@ -83,4 +83,4 @@ app.put('/api/update',(req,res)=>{
 //         });
 // });
 
-app.listen(3001, () => console.log('Express server is runnig at port no : 3001'));
+app.listen(process.env.PORT || PORT , () => console.log(`Express server is runnig at port no : ${PORT}`));
