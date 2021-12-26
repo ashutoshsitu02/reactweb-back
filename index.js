@@ -7,12 +7,13 @@ const PORT =3001;
 
 
 var mysqlConnection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '1234',
-    database: 'factory',
+    host: 'us-cdbr-east-05.cleardb.net',
+    user: 'b0d640e1aa24d8',
+    password: 'b4cc4c98',
+    database: 'heroku_fd439ebdc1be0a1',
     multipleStatements: true
 });
+
 
 app.use(cors());
 app.use(express.json())
