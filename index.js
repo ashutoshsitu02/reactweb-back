@@ -63,7 +63,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 //get
 app.get('/', (req, res) => {
-    connection.query('SELECT * FROM factory', (err, rows, fields) => {
+    connection.query('SELECT * FROM factory', (err, rows) => {
         if (!err)
             res.send(rows);
         else
